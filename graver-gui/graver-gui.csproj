@@ -51,14 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ControllWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ControllWindow.Designer.cs">
+      <DependentUpon>ControllWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DrawWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawWindow.Designer.cs">
+      <DependentUpon>DrawWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageControl.cs" />
+    <Compile Include="MultiFormApplicationStart.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControllWindow.resx">
+      <DependentUpon>ControllWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawWindow.resx">
+      <DependentUpon>DrawWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
